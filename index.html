@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Gasp Furniture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="store-container">
+        <h1>Last Gasp Furniture</h1>
+        <p>Welcome to our patio furniture store!</p>
+
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chair</td>
+                    <td>$25.50</td>
+                </tr>
+                <tr>
+                    <td>Recliner</td>
+                    <td>$37.75</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>$49.95</td>
+                </tr>
+                <tr>
+                    <td>Umbrella</td>
+                    <td>$24.89</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <button id="purchase-btn" onclick="makePurchase()">Make a Purchase</button>
+    </div>
+
+    <div id="invoice-container" style="display: none;">
+        <h1>Your Invoice</h1>
+        
+        <div id="invoice-items">
+            </div>
+
+        <hr class="balanced-hr">
+
+        <div id="invoice-totals">
+            </div>
+
+        <div class="center-button">
+            <button id="shop-again-btn" onclick="resetPage()">Shop Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
